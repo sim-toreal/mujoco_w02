@@ -6,6 +6,21 @@ Instead of the template code from the course, this uses a sample code from the c
 
 Current version is 2.3.1 - this is hardcoded in the CMakeList MuJoCo reference.
 
+
+### Building
+This is a standard CMake project and I normally run it from CLion.
+
+[CMakeLists.txt](CMakeLists.txt) has hard-coded path to MuJoCo - you will need to update it first to your path.
+
+To manually build & run:
+
+    mkdir build
+    cd build
+    cmake ..
+    build -j4
+
+    ./w02
+
 ### Content
 #### Setting Camera View
 Use object `cam` - see from line 152 (before `while (!glfwWindowShouldClose(window)) {`):

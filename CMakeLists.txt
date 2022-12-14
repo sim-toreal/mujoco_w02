@@ -9,5 +9,5 @@ link_directories(/home/bohm/.mujoco/mujoco-2.3.1/lib/)
 
 find_package(glfw3 REQUIRED)
 
-add_executable(w02_cpp main.cpp)
-target_link_libraries(w02_cpp libmujoco.so libglfw.so)
+add_executable(w02 main.cpp)
+target_link_libraries(w02 libmujoco.so libglfw.so)
